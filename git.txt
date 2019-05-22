@@ -23,3 +23,22 @@ git clone 克隆远程仓库
 git push 推送到远程仓库
 git checkout -b dev 创建dev分支，并切换到dev
 git branch dev 创建dev分支
+切换到master
+git merge dev 把dev的内容合并到master（如果没有冲突）
+git branch -d dev 删除dev
+git merge --no-ff -m "xxx" dev 普通模式合并
+git stash 暂时隐藏没有干完，又不想提交的
+git stash list 列举stash
+git stash apply 恢复stash到本地（stash保留记录）
+git stash drop 删除stash记录
+git stash pop = 以上两个相加
+修bug和新功能最好都创建一个新分支
+鼓励用新分支
+每次开始都pull
+没有连接报错：If you wish to set tracking information for this branch you can do so with:
+git branch --set-upstream-to=origin/dev dev
+连接后再pull
+push前再pull一次
+发现冲突在commit里面的内容，先手动修改冲突的内容（有点烦这里），然后在add和commit
+git tag xxx 创建标签
+git tag 查看标签
