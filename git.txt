@@ -9,4 +9,5 @@ git log 查看历史
 git reflog 查看历史未来
 git reset --hard xxxx（commitId）撤销到某个时刻（过去、未来）
 某个文件commit后，突然又要修改，不必撤销commit，继续add，会自动合并，再来一次commit
-git checkt 撤销文件和切换分支
+git checkout 撤销文件（包括删除的，但是没有提交的就不行了）和切换分支
+如果没有提交到commit，reset撤销后，没有提交的可能找不回来
